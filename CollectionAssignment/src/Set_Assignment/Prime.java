@@ -25,16 +25,16 @@ public class Prime {
 
 			}
 
-			boolean b = true;
+			boolean b = false;
 			for (int a = 2; a < i / 2; a++) {
 				if (i % a == 0) {
-					b = false;
+					b = true;
 					break;
 
 				}
 			}
 
-			if (b) {
+			if (!b) {
 				System.out.println(i);
 
 			}
